@@ -1,64 +1,76 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<meta charset="UTF-8">
-		<title>用户首页-最世界</title>
-		<link rel="stylesheet" type="text/css" href="../../libs/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/mine.css"/>
-		<script src="../../libs/flexible.js" type="text/javascript" charset="utf-8"></script>
-	</head>
-	<body>
-		<div id="mine">
-			<div class="mFirst">
-				<img src="../img/set.jpg"/>
-				<p>最世界</p>
-				<img src="../img/mail.jpg"/>
-			</div>
-			<div class="mSecond">
-				<img src="../img/headImage_lite.png"/>
-				<section class="user">
-					<img src="../img/user.png"/>
-				</section>
-				<div>
-					<section>用户</section>
-					<section>退出登录</section>
-				</div>
-				
-			</div>
-			<div class="mThird">
-				<section>
-					<img src="../img/myBar.jpg"/>
-					<p>我的论坛</p>
-					<img src="../img/go.jpg"/>
-				</section>
-				<section>
-					<img src="../img/myask.jpg"/>
-					<p>我的行程计划</p>
-					<img src="../img/go.jpg"/>
-				</section>
-				<section>
-					<img src="../img/myplan.jpg"/>
-					<p>最世界产品提醒</p>
-					<img src="../img/go.jpg"/>
-				</section>
-				<section>
-					<img src="../img/mynote.jpg"/>
-					<p>最世界的优惠券</p>
-					<img src="../img/go.jpg"/>
-				</section>
-				<section>
-					<img src="../img/mysave.jpg"/>
-					<p>兑换我的世界币</p>
-					<img src="../img/go.jpg"/>
-				</section>
-				<section>
-					<img src="../img/mymoney.jpg"/>
-					<p>账号与密码管理</p>
-					<img src="../img/go.jpg"/>
-				</section>
-			</div>
-			
+<link rel="stylesheet" type="text/css" href="./mine/css/mine.css"/>
+<script src="./mine/js/mine.js" type="text/javascript" charset="utf-8"></script>
+<div id="mine">
+	<div class="mFirst">
+		<a onclick="history.back()">
+			<img src="./mine/img/set.jpg"/>
+		</a>
+		<p>最世界</p>
+		<img src="./mine/img/mail.jpg"/>
+	</div>
+	<div class="mSecond">
+		<img src="./mine/img/headImage_lite.png"/>
+		<section class="user">
+			<img src="./mine/img/user.png"/>
+		</section>
+		<div>
+			<section>用户</section>
+			<section id="exit">
+				<a ui-sref="exit">退出登录</a>
+			</section>
 		</div>
-	</body>
-</html>
+		
+	</div>
+	<div class="mThird">
+		<a>
+			<section>
+				<img src="./mine/img/myBar.jpg"/>
+				<p>我的论坛</p>
+				<img src="./mine/img/go.jpg"/>
+			</section>
+		</a>
+		<a ui-sref="plan">
+		<section>
+			<img src="./mine/img/myask.jpg"/>
+			<p>我的行程计划</p>
+			<img src="./mine/img/go.jpg"/>
+		</section>
+		</a>
+		<a>
+		<section>
+			<img src="./mine/img/myplan.jpg"/>
+			<p>最世界产品提醒</p>
+			<img src="./mine/img/go.jpg"/>
+		</section>
+		</a>
+		<a>
+		<section>
+			<img src="./mine/img/mynote.jpg"/>
+			<p>最世界的优惠券</p>
+			<img src="./mine/img/go.jpg"/>
+		</section>
+		</a>
+		<a>
+		<section>
+			<img src="./mine/img/mysave.jpg"/>
+			<p>兑换我的世界币</p>
+			<img src="./mine/img/go.jpg"/>
+		</section>
+		</a>
+		<a>
+		<section>
+			<img src="./mine/img/mymoney.jpg"/>
+			<p>账号与密码管理</p>
+			<img src="./mine/img/go.jpg"/>
+		</section>
+		</a>
+	</div>
+	<div class="mForth">
+		<p>2004-2017 © 穷游网™ qyer.com All rights reserved.</p>
+		<div>
+			<section>手机版</section>
+			<section>电脑板</section>
+			<section>APP</section>
+		</div>
+	</div>
+</div>

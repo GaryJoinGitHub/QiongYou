@@ -54,22 +54,40 @@
 			templateUrl:'./home/home.html',
 			controller: 'homeCtrl'
 		})
+
+
 		.state('address',{
 			url: '/address',
 			templateUrl:'./address/address.html'
 		})
-		.state('mine',{
+
+
+		//登录
+		.state('load', {
+			url: '/load',
+			templateUrl: './mine/myload.html'
+		})
+		//我的
+		.state('mine', {
 			url: '/mine',
-			templateUrl:'./mine/myload.html'
+			templateUrl: './mine/html/mine.html'
 		})
 		.state('me',{
 			url: '/me',
 			templateUrl:'./mine/me.html'
 		})
-		.state('reserve',{
-			url: '/reserve',
-			templateUrl:'./home/reserve.html'
+		//退出登录
+		.state('exit', {
+			url: '/exit',
+			templateUrl: './mine/myload.html'
 		})
+		//我的计划
+		.state('plan', {
+			url: '/plan',
+			templateUrl: './mine/html/myPlan.html'
+		})
+
+
 		//二级路由
 		.state('home.jingxuan',{
 			url: '/jingxuan',
@@ -84,4 +102,5 @@
 	}]);
 </script>
 	<script src="./home/js/home.js" charset="utf-8"></script>
+	<script type="text/javascript" src="./mine/js/mine.js"></script>
 </html>

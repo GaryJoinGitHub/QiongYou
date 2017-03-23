@@ -10,10 +10,10 @@
   position: absolute;
   top: 0.4375rem;
 }
-#mine .mFirst img:nth-of-type(1) {
+#mine .mFirst a img {
   left: 0.375rem;
 }
-#mine .mFirst img:nth-of-type(2) {
+#mine .mFirst img:nth-of-type(1) {
   right: 0.375rem;
 }
 #mine .mFirst p {
@@ -38,7 +38,7 @@
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 0.1px solid white;
 }
 #mine .mSecond div {
   position: absolute;
@@ -62,8 +62,8 @@
 #mine .mThird {
   clear: both;
   padding-top: 0.3125rem;
+  padding-bottom: 1px;
   background-color: #f1f1f1;
-  height: 10.8rem;
 }
 #mine .mThird section {
   padding: 15px 8px 15px 10px;
@@ -84,7 +84,24 @@
   margin-top: 0.125rem;
   float: right;
 }
-#mine .mThird section:last-of-type {
+#mine .mThird a:last-of-type section {
   margin: 0.25rem 0;
+}
+#mine .mForth {
+  height: 1.8rem;
+}
+#mine .mForth p {
+  text-align: center;
+  color: #c1c1c1;
+  margin: 0.65rem 0.25rem 0.15rem 0.25rem;
+}
+#mine .mForth div {
+  width: 60%;
+  margin: 0 auto;
+}
+#mine .mForth div section {
+  width: 33%;
+  float: left;
+  text-align: center;
 }
 /*# sourceMappingURL=mine.css.map */
